@@ -19,14 +19,11 @@ header{
     border: 2px solid black;
 }
 
-.col1{
+.col1, .col3{
     width: 20%;
 }
 .col2{
     width: 60%;
-}
-.col3{
-    width: 20%;
 }
 footer{
     width: 100%;
