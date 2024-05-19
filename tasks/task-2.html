@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        *{
+            background-color: black;
+            color: whitesmoke;
+        }
+        #submit{
+            width: 100px;
+            height: 30px;
+            font-weight: bold;
+        }
+        h3,form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <!-- <a href="#html"></a> 
+  <h1 id="">Google</h1> -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center border-bottom">
+          <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4"><b>Yash Varma</b></span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          </ul>
+        </header>
+      </div>
+    <h3><u> Registration Form</u></h1>
+    <form action="">
+
+        <label for="firstname"><b>First Name</b></label><br>
+        <input type="text" required placeholder="firstname"><br><br>
+        
+        <label for="lastname"><b>Last Name</b></label><br>
+        <input type="text" required placeholder="lastname"><br><br>
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" required placeholder="email"><br><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" required placeholder="password"><br><br>
+        <label for="date"><b>Date</b></label><br>
+        <input type="date" required ><br><br>
+        <label for="datetime"><b>Date Time</b></label><br>
+        <input type="datetime-local" required ><br><br>
+        <label for="choosefile"><b>Choose File</b></label>
+        <input type="file" required><br><br>
+        <label for="range">Experience</label>
+        <input type="range" required><br><br>
+        <label for="gender"><b>Gender:</b></label><br>
+        Male<input type="radio" name="gender" id="male">
+        Female<input type="radio" name="gender" id="female"><br><br>
+        <label for="checkbox"><b>Expected Salary:</b></label><br>
+        60Crore<input type="checkbox">
+        70Crore<input type="checkbox">
+        80Crore<input type="checkbox">
+        90Crore<input type="checkbox">
+        100Crore<input type="checkbox"><br><br>
+        <label for="feedback"><b>Feedback:</b></label><br>
+        <textarea name="feedback" id="feedback" placeholder="description" cols="30" rows="10"></textarea><br><br>
+        <select name="company" id="company" >
+          <optgroup label="Company">
+            <option value="IT">IT</option>
+            <option value="BPO">BPO</option>
+            <option value="BPS">BPS</option>
+          </optgroup>
+        </select>
+        <br><br>
+        <label for="lang">Skills:</label><br>
+        <input list="choice" id="lang" name="lang">
+        <datalist id="choice">
+          <option value="html">
+          <option value="css">
+        </datalist>
+        <br><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Yash Varma, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+</body>
+</html>

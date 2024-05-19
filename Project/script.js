@@ -25,6 +25,7 @@ addBtn.addEventListener('click',function(){
 
     const ipVal = inputHere.value;
     const list = document.createElement('li');
+    list.classList.add('list-group-item');
     inputHere.value = '';
 
     const checkBox = document.createElement('input');
